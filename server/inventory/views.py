@@ -61,3 +61,9 @@ def decrease_item(request, item_id):
     inventory.refresh_from_db()
 
     return HttpResponse(inventory.quantity)
+
+@csrf_exempt
+def remove_item(request, item_id):
+    inventory = get_object_or_404(Inventory, pk=item_id)
+    inventory.delete()
+    return HttpResponse(status=204)
