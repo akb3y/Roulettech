@@ -42,3 +42,12 @@ def create_item(request):
             return HttpResponseBadRequest("Invalid quantity value")
     else:
         return HttpResponseBadRequest("Invalid request method")
+    
+@csrf_exempt
+def increase_item(request, item_id):
+    inventory = get_object_or_404(Inventory, pk=item_id)
+    inventory.quantity = F('quantity') + 1
+    inventory.save()
+    inventory.refresh_from_db()
+
+    return HttpResponse(inventory.quantity)
