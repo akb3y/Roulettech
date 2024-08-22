@@ -13,20 +13,10 @@ db.sqlite3
 media/
 staticfiles/
 
-# Environment variables
-.env
-
-# VS Code
 .vscode/
 
-# PyCharm
 .idea/
 
-# macOS
 .DS_Store
 
-# Linux
-*~
-
-# Windows
-Thumbs.db
+.venv
