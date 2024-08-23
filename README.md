@@ -27,7 +27,8 @@ Scoped and Descoped
 
 Architecture
 
-<img src="assets/images/architecture.png" width="750">
+![Architecture](https://github.com/user-attachments/assets/4e3a7a79-3106-4e83-b802-e14dca049294)
+
 
 ### Installation
 
@@ -127,4 +128,8 @@ Add Item
 Item Added
 
 <img src="assets/images/item_added.png" width="300">
+
+
+
+https://github.com/user-attachments/assets/eb0b9453-2ad4-4d85-a693-56a892379f67
 
