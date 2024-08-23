@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Body from "./components/body/Body";
 import "../public/style.css";
 
 const App = () => {
-  return <h1>Hello world! I am using React</h1>;
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!isModalOpen);
+  };
+
+  return (
+    <div className="App">
+      <Header toggleModal={toggleModal} />
+      <Body toggleModal={toggleModal} isModalOpen={isModalOpen} />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
