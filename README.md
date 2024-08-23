@@ -20,6 +20,8 @@ Pantry.io is an inventory management app designed to help you keep track of ever
 
 Scoped and Descoped 
 
+  In my original design, I had images for each item but took that out due to time constraints.  I did realize that the user would need a way to delete items that are irrelevant so I added that.
+
 [Figma File Here](https://www.figma.com/design/sPlrHteZpRCyTEe3E31etM/Roulettech?node-id=0-1&t=26HJnDnVKhVIdjjt-1)
 
 <img src="assets/images/scope.png" width="350">
